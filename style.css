@@ -84,6 +84,7 @@ h1 {
 .blog__author {
     order: 6;
     font-weight: 800;
+    margin-top: 12px;
 }
 @media screen and (min-width: 1440px) {
     .blog__author {
