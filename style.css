@@ -1,0 +1,139 @@
+/* BASIC STYLE */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --yellow: #F4D04E;
+    --white: #FFFFFF;
+    --gray: #6B6B6B;
+    --black: #111111;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: figtree, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background: var(--yellow);
+}
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+}
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* RESET STYLE */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, p {
+    margin: 0;
+}
+h1 {
+    font-size: 1.42em; /* 20/14 */
+    font-weight: 800;
+}
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 1.5rem; /* 24/16 */
+    }
+}
+
+/* BLOG POST STYLE */
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 24px;
+
+    box-shadow: 8px 8px 0 var(--black);
+
+    max-width: 327px;
+}
+@media screen and (min-width: 1440px) {
+    .blog {
+        max-width: 384px;
+    }
+}
+
+.blog__title {
+    order: 4;
+}
+.blog__author {
+    order: 6;
+    font-weight: 800;
+}
+@media screen and (min-width: 1440px) {
+    .blog__author {
+        font-size: 0.875em; /* 14/16 */
+    }
+}
+.blog__author__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+}
+.blog__author__link::before {
+    content: '';
+    background-image: url('/assets/images/image-avatar.webp');
+    background-size: contain;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.blog__date {
+    order: 3;
+    font-size: 0.85em; /* 12/14 */
+}
+@media screen and (min-width: 1440px) {
+    .blog__date {
+        font-size: 0.875em; /* 14/16 */
+    }
+}
+.blog__tags {
+    order: 2;
+    display: flex;
+    gap: 12px;
+}
+.blog__description {
+    order: 5;
+    color: var(--gray);
+}
+.blog__image {
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* TAG STYLE */
+.tag {
+    background: var(--yellow);
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85em; /* 12/14 */
+}
+@media screen and (min-width: 1440px) {
+    .tag {
+        font-size: 0.875em; /* 14/16 */
+    }
+}
