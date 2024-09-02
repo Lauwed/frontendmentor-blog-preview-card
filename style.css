@@ -76,6 +76,10 @@ h1 {
 
 .blog__title {
     order: 4;
+    transition: color .3s ease;
+}
+.blog__title:hover, .blog__title:focus {
+    color: var(--yellow);
 }
 .blog__author {
     order: 6;
