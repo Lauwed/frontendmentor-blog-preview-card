@@ -95,7 +95,7 @@ h1 {
 }
 .blog__author__link::before {
     content: '';
-    background-image: url('/assets/images/image-avatar.webp');
+    background-image: url('./assets/images/image-avatar.webp');
     background-size: contain;
     display: block;
     width: 32px;
