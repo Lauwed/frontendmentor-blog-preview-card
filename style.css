@@ -1,3 +1,9 @@
+/* FONT-FACE */
+@font-face {
+    font-family: "figtree";
+    src: local("figtree"), url("./assets/fonts/Figtree-VariableFont_wght.ttf")
+}
+
 /* BASIC STYLE */
 
 *, *::before, *::after {
@@ -12,7 +18,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: figtree, sans-serif;
+    font-family: "figtree", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     background: var(--yellow);
